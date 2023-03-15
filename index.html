@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/globalStyles.css">
+    <link rel="stylesheet" href="./src/styles/index.css">
+
+    <script type="module" src="/src/scripts/index.js" defer></script>
+    
+    <title>Homepage</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- TOASTIFY -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    
+</head>
+<body>
+    <header>
+        <img src="./src/assets/icons/Logo.svg" alt="Logo KenziePets" class="logo">
+        <div class="button__container">
+            <button class="register">Register</button>
+            <button class="login">Login</button>
+        </div>
+    </header>
+
+    <main>
+        <ul class="list__container">
+            <li class="list__item">
+                <img src="./src/assets/imgs/iguana.png" alt="Foto do pet">
+                <h1>Zampita</h1>
+                <p>Iguana</p>
+            </li>
+            <li class="list__item">
+                <img src="./src/assets/imgs/furao.png" alt="Foto do pet">
+                <h1>Tico e Teco </h1>
+                <p>Furão</p>
+            </li>
+            <li class="list__item">
+                <img src="./src/assets/imgs/coelho.png" alt="Foto do pet">
+                <h1>Pernalonga</h1>
+                <p>Coelho</p>
+            </li>
+            <li class="list__item">
+                <img src="./src/assets/imgs/tarântula-de-joelhos-vermelhos.png" alt="Foto do pet">
+                <h1>Spider man</h1>
+                <p>Aranha</p>
+            </li>
+            <li class="list__item">
+                <img src="./src/assets/imgs/hamster.png" alt="Foto do pet">
+                <h1>Loreto</h1>
+                <p>Hamster</p>
+            </li>
+            <li class="list__item">
+                <img src="./src/assets/imgs/Avatar animal.svg" alt="Foto do pet">
+                <h1>Bidu</h1>
+                <p>Cachorro</p>
+            </li>
+            
+        </ul>
+    </main>
+    <footer>
+        <p>KenziePets | Todos os Direitos Reservados</p>
+    </footer>
+    
+    <dialog class="modalRegister">
+        <div class="headerModal"><img src="./src/assets/imgs/Vector (1).svg" alt="" class="closeRegister"></div>
+        <div class="bodyModal" id="inputRegister">
+            <h1>Cadastrar</h1>
+            <input type="text" placeholder="  Nome" name="name">
+            <input type="email" placeholder="  E-mail" name="email">
+            <input type="password" placeholder="  Senha" name="password">
+            <input type="text" placeholder="  Avatar?" name="avatar_url">
+            <button  id="btnRegister">Cadastrar</button>
+            <p>Já tem cadastro? <a class="linkLogin blueText">Clique aqui</a> para logar.</p>
+        </div>
+        <div class="footerModal"></div>
+    </dialog>
+
+    <dialog class="modalLogin">
+        <div class="headerModal"><img src="./src/assets/imgs/Vector (1).svg" alt="" class="closeLogin"></div>
+        <div class="bodyModal" id="inputLogin">
+            <h1>Login</h1>
+            <input type="text" placeholder="  E-mail" name="email">
+            <input type="password" placeholder="  Senha" name="password">
+            <button id="btnLogin">Entrar</button>
+            <p>Não tem cadastro? <a class="linkRegister blueText">Clique aqui</a> para se cadastrar.</p>
+        </div>
+        <div class="footerModal"></div>
+    </dialog>
+
+    <script src="./src/scripts/index.js" type="module"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+</body>
+</html>

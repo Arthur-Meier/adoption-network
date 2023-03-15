@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> UserPage</title>
+    
+    <link rel="stylesheet" href="/src/styles/reset.css">
+    <link rel="stylesheet" href="/src/styles/globalStyles.css">
+    <link rel="stylesheet" href="/src/styles/profilePage.css">
+    <link rel="stylesheet" href="/src/styles/buttons.css">
+    
+
+    <script type="module" src="/src/scripts/profilePage.js" defer></script>
+    <script type="module" src="/src/scripts/logged.js" defer></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap" rel="stylesheet">
+
+    <!-- TOASTIFY -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+</head>
+<body>
+    <header>
+        <img src="/src/assets/icons/Logo.svg" alt="Logo KenziePets" class="logo">
+        <div class="button__container">
+            <a href="loggedPage.html">  <button class="btn" id="home">Home</button>  </a>
+            <button class="btn purple link__logout" id="logout">Logout</button>
+            
+        </div>
+    </header>
+
+    <div class="container__profile-img">
+        <div class="background-effect">
+        </div>
+        
+    </div>
+
+    <div class="container__profile-data">
+        
+    </div>
+
+    <main>
+        <section class="profile__bar">
+            <button class="btn green" id="btn-new-pet"> Cadastrar novo pet </button>
+        </section>
+
+    
+        <section class="container__pets">
+            
+        </section>
+    </main>
+
+    <footer>
+        <p>KenziePets | Todos os Direitos Reservados</p>
+    </footer>
+    
+        
+    <dialog class="modal-profilePage"></dialog>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+</body>
+</html>
